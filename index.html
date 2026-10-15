@@ -1,1 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tu Nombre | Portafolio</title>
+<meta name="description" content="Portafolio de Tu Nombre, desarrollador/a de software.">
+<style>
+  :root {
+    --bg: #f7f8fa;
+    --text: #1c2430;
+    --muted: #5b6676;
+    --accent: #1f5fbf;
+    --line: #dde2ea;
+    --card: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12161c;
+      --text: #e8ecf2;
+      --muted: #9aa5b5;
+      --accent: #6aa2ff;
+      --line: #263041;
+      --card: #1a2029;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 56px 20px 80px; }
+  h1 { font-size: 2.4rem; margin: 0 0 4px; line-height: 1.15; }
+  h2 { font-size: 1.3rem; margin: 48px 0 16px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+  .role { color: var(--muted); font-size: 1.15rem; margin: 0 0 16px; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .links { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 16px; }
+  .project {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 16px;
+  }
+  .project h3 { margin: 0 0 6px; font-size: 1.1rem; }
+  .project p { margin: 0 0 10px; }
+  .stack { color: var(--muted); font-size: 0.9rem; }
+  .skills { padding-left: 20px; }
+  footer { margin-top: 56px; color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
 
+  <header>
+    <h1>Tu Nombre Completo</h1>
+    <p class="role">Tu profesión o especialidad (ej. Desarrollador web, Analista de datos)</p>
+    <p>Escribe aquí 2 o 3 frases sobre quién eres, qué sabes hacer y qué tipo de trabajo buscas.</p>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/tu-usuario" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/tu-usuario" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:tu-correo@ejemplo.com">tu-correo@ejemplo.com</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Proyectos</h2>
+
+    <article class="project">
+      <h3>Nombre del proyecto 1</h3>
+      <p>Qué problema resuelve y cuál fue tu aporte, en una o dos frases.</p>
+      <p class="stack">HTML, CSS, JavaScript</p>
+      <a href="https://github.com/tu-usuario/proyecto-1" target="_blank" rel="noopener">Ver código</a>
+      &nbsp;·&nbsp;
+      <a href="https://tu-usuario.github.io/proyecto-1" target="_blank" rel="noopener">Ver demo</a>
+    </article>
+
+    <article class="project">
+      <h3>Nombre del proyecto 2</h3>
+      <p>Qué problema resuelve y cuál fue tu aporte, en una o dos frases.</p>
+      <p class="stack">Python, SQL</p>
+      <a href="https://github.com/tu-usuario/proyecto-2" target="_blank" rel="noopener">Ver código</a>
+    </article>
+  </section>
+
+  <section>
+    <h2>Habilidades</h2>
+    <ul class="skills">
+      <li>Lenguajes: JavaScript, Python</li>
+      <li>Herramientas: Git, GitHub, VS Code</li>
+      <li>Idiomas: Español (nativo), Inglés (intermedio)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Formación</h2>
+    <p>Título o curso, institución y año.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Tu Nombre</p>
+  </footer>
+
+</main>
+</body>
+</html>
